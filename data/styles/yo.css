@@ -1,0 +1,247 @@
+/*
+   * Basic button style
+   */
+.btn {
+  -webkit-box-shadow: 1px 1px 0 rgba(255, 255, 255, 0.5) inset;
+          box-shadow: 1px 1px 0 rgba(255, 255, 255, 0.5) inset;
+  border-radius: 3px;
+  border: 1px solid;
+  display: inline-block;
+  height: 18px;
+  line-height: 18px;
+  padding: 0 8px;
+  position: relative;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 12px;
+  text-decoration: none;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+}
+
+/*
+   * Counter button style
+   */
+.btn-counter {
+  margin-right: 39px;
+}
+
+.btn-counter:after,
+.btn-counter:hover:after {
+  text-shadow: none;
+}
+
+.btn-counter:after {
+  border-radius: 3px;
+  border: 1px solid #d3d3d3;
+  background-color: #eee;
+  padding: 0 8px;
+  color: #777;
+  content: attr(data-count);
+  left: 100%;
+  margin-left: 8px;
+  margin-right: -13px;
+  position: absolute;
+  top: -1px;
+}
+
+.btn-counter:before {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  filter: progid:DXImageTransform.Microsoft.Matrix(M11=0.7071067811865476, M12=-0.7071067811865475, M21=0.7071067811865475, M22=0.7071067811865476, sizingMethod='auto expand');
+  background-color: #eee;
+  border: 1px solid #d3d3d3;
+  border-right: 0;
+  border-top: 0;
+  content: '';
+  position: absolute;
+  right: -13px;
+  top: 5px;
+  height: 6px;
+  width: 6px;
+  z-index: 1;
+  zoom: 1;
+}
+
+/*
+   * Custom styles
+   */
+.btn {
+  background-color: #dbdbdb;
+  border-color: #bbb;
+  color: #666;
+}
+
+.btn:hover,
+.btn.active {
+  text-shadow: 0 1px 0 #b12f27;
+  background-color: #f64136;
+  border-color: #b12f27;
+}
+
+.btn:active {
+  -webkit-box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.2) inset;
+          box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.2) inset;
+}
+
+.btn span {
+  color: #f64136;
+}
+
+.btn:hover, .btn:hover span,
+.btn.active, .btn.active span {
+  color: #eeeeee;
+}
+
+.btn:active span {
+  color: #b12f27;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.3);
+}
+
+.file-uploader {
+  background-color: #dbefe9;
+  border-radius: 3px;
+  color: #242424;
+}
+
+.file-uploader {
+  background-color: #dbefe9;
+  border-radius: 3px;
+  color: #242424;
+}
+
+.file-uploader__message-area {
+  font-size: 18px;
+  padding: 1em;
+  text-align: center;
+  color: #377a65;
+}
+
+.file-list {
+  background-color: white;
+  font-size: 16px;
+}
+
+.file-list__name {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.file-list li {
+  height: 50px;
+  line-height: 50px;
+  margin-left: 0.5em;
+  border: none;
+  overflow: hidden;
+}
+
+.removal-button {
+  width: 20%;
+  border: none;
+  background-color: #d65d38;
+  color: white;
+}
+
+.removal-button::before {
+  content: "X";
+}
+
+.removal-button:focus {
+  outline: 0;
+}
+
+.file-chooser {
+  padding: 1em;
+  -webkit-transition: background-color 1s, height 1s;
+  transition: background-color 1s, height 1s;
+}
+
+.file-chooser p {
+  font-size: 18px;
+  padding-top: 1em;
+}
+
+.file-uploader {
+  max-width: 400px;
+  height: auto;
+  margin: 2em auto;
+}
+
+.file-uploader * {
+  display: block;
+}
+
+.file-uploader input[type="submit"] {
+  margin-top: 2em;
+  float: right;
+}
+
+.file-list {
+  margin: 0 auto;
+  max-width: 90%;
+}
+
+.file-list__name {
+  max-width: 70%;
+  float: left;
+}
+
+.removal-button {
+  display: inline-block;
+  height: 100%;
+  float: right;
+}
+
+.file-chooser {
+  width: 90%;
+  margin: 0.5em auto;
+}
+
+.file-chooser__input {
+  margin: 0 auto;
+}
+
+.file-uploader__submit-button {
+  width: 100%;
+  border: none;
+  font-size: 1.5em;
+  padding: 1em;
+  background-color: #72bfa7;
+  color: white;
+}
+
+.file-uploader__submit-button:hover {
+  background-color: #a7d7c8;
+}
+
+.file-list li:after, .file-uploader:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.hidden {
+  display: none;
+}
+
+.hidden input {
+  display: none;
+}
+
+.error {
+  background-color: #d65d38;
+  color: white;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+/*# sourceMappingURL=yo.css.map */

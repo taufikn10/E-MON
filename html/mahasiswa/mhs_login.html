@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Login - College</title>
+  <link rel="Icon" href="data/images/Emon (4).png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <link rel="stylesheet" href="data/libraries/bootsrap/css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="../../data/styles/login.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:600">
+</head>
+
+<body>
+  <!-- Start Navbar -->
+  <div class="nav">
+    <div class="logo">
+      <img src="../../data/images/Emon (1) 1.png" alt="">
+    </div>
+  </div>
+  </header>
+    <!-- Login -->
+<div class="login-wrap">
+  <div class="login-html">
+    
+    <input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">Sign In</label>
+    
+    <input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab">Sign Up</label>
+    
+    <div class="login-form">
+     
+<!-- SIGN IN -->
+      <form action=" " method="POST" enctype="multipart/form-data">
+        <div class="sign-in-htm">
+          <div class="group">
+            <label for="user" class="label">Username</label>
+            <input id="user" type="text" class="input">
+          </div>
+          <div class="group">
+            <label for="pass" class="label">Password</label>
+            <input id="pass" type="password" class="input" data-type="password">
+          </div>
+          <div class="group">
+            <input id="check" type="checkbox" class="check" checked>
+            <label for="check"><span class="icon"></span> Keep me Signed in</label>
+          </div>
+          <div class="group">
+            <input type="submit" class="button" value="Sign In">
+          </div>
+          <div class="hr"></div>
+          <div class="foot-lnk">
+            <a href="../mahasiswa/fopass.html">Forgot Password?</a>
+            </div>
+            <div class="foot-back">
+            <a href="../portal.html">Back Portal</a>
+          </div>
+        </div>
+      </form>
+      
+<!-- SIGN UP-->
+      <form action=" " method="POST" enctype="multipart/form-data">
+        <div class="sign-up-htm">
+          <div class="group">
+            <label for="nama-depan" class="label">Nama Depan</label>
+            <input type="name" name="nama-depan" id="nama-depan" required=" " minlength="1" maxlength="20" class="input">
+          </div>
+          <div class="group">
+            <label for="nama-belakang" class="label">Nama Belakang</label>
+            <input type="name" name="nama-belakang" id="nama-belakang" required=" " minlength="1" maxlength="20" class="input">
+          </div>
+          <div class="group">
+            <label for="password" class="label">Password</label>
+            <input type="password" name="password" id="password" required=" " minlength="3" maxlength="8" class="input">
+          </div>
+          <div class="group">
+            <label for="confirm-password" class="label">Repeat Password</label>
+            <input type="password" name="password2" id="confirm-password" required=" " minlength="3" maxlength="8" class="input">
+          </div>
+          <div class="group">
+            <label for="email" class="label">Email Address</label>
+            <input type="email" name="email" id="email" required=" " placeholder="example@example.com" maxlength="50" class="input">
+          </div>
+          <div class="group">
+            <input type="submit" name="register" value="Sign Up" class="button">
+          </div>
+          <div class="hr"></div>
+          <div class="foot-up">
+            <label for="tab-1">Already Member?</label>
+          </div>
+        </div>
+      </form>  
+    
+
+    </div>
+  </div>
+</div>
+
+
+    <!-- jquery first, then popper, then bootsrap  -->
+    <script src="data/libraries/jquery/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="data/libraries/bootsrap/js/bootstrap.js"></script>
+    <script src="data/libraries/retina/retina.min.js"></script>
+</body>
+
+</html>

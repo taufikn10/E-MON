@@ -1,0 +1,99 @@
+/* ----------- Body ----------- */
+body {
+  background-color: rgba(0, 0, 0, 1);
+  background-repeat: no-repeat;
+  background-size: cover;
+  font: 16px/18px arial;
+  z-index: 1;
+
+  padding: 0;
+}
+
+
+
+/* ^^^^^^^^^^^^ CONTAINER ^^^^^^^^^^^^ */
+.container {
+  width: 100%;
+  height: 650px;
+  
+  margin: 0;
+  padding: 0;
+
+  overflow: hidden;
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+
+
+
+/* CONTAINER - NAVBAR */
+.container .navbar {
+	width: 20%;
+	height: 650px;
+
+	margin: 0;
+	padding: 0;
+
+	background-color: blue;
+
+	overflow: hidden;
+	box-sizing: border-box;
+
+	display: flex;
+	flex-direction: column;
+}
+
+.container .navbar .head {
+	width: 100%;
+	height: 60px;
+	background-color: green;
+
+	margin: 0;
+	padding: 0;
+
+	overflow: hidden;
+	box-sizing: border-box;
+
+	text-align: center;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.container .navbar .kotak {
+	width: 100%;
+	height: 60px;
+	background-color: green;
+
+	margin: 0;
+	padding: 0;
+
+	overflow: hidden;
+	box-sizing: border-box;
+
+	text-align: center;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+
+/* CONTAINER - TABLE */
+.container .content {
+	width: 80%;
+	height: 650px;
+
+	margin: 0;
+	padding: 0;
+
+	background-color: yellow;
+
+	overflow: hidden;
+	box-sizing: border-box;
+}

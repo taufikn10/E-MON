@@ -1,0 +1,592 @@
+body {
+  background-color: #fff;
+  font-family: 'Assistant', sans-serif;
+  color: black;
+}
+
+/* ^^^^^^^^^^^^ NAVBAR ^^^^^^^^^^^^ */
+
+#nav {
+  position: sticky;
+  top: 0;
+  z-index: 1001;
+}
+
+.nav {
+  width: 100%;
+  height: 60px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-bottom: 4px solid black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  box-sizing: border-box;
+  z-index: 9999;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* ******** Nav - Logo ********* */
+.nav .logo {
+  width: 50%;
+  box-sizing: border-box;
+
+  padding: 1px 3px 1px 3px;
+
+  display: flex;
+  overflow: hidden;
+  align-items: center;
+
+  cursor: default;
+}
+
+.nav .logo img {
+  height: 50px;
+  margin-right: 8px;
+}
+
+.nav .logo h3:hover {
+  cursor: default;
+}
+
+/* jumbotron */
+#banner {
+  margin-top: 60px;
+  position: relative;
+  background-image: url('../images/BackPortal.png');
+  width: 100%;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.log-title {
+  margin-top: 20px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  display: block;
+  margin: 0 auto;
+}
+
+.text {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 20px;
+  text-align: center;
+  color: #000000;
+}
+
+.ban-img {
+  position: relative;
+  z-index: 1000;
+  width: 80%;
+  display: block;
+  margin: 0 auto;
+
+}
+
+.wave {
+  position: absolute;
+  bottom: -10%;
+  left: 0;
+}
+
+/* end Jumbotrron */
+
+/* fitur */
+.yee {
+  width: 90%;
+  background-color: #60A6D9;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.fitur-desc {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 20px;
+  text-align: center;
+  color: black;
+}
+
+.fitur-link {
+  height: 31px;
+  text-align: center;
+  font-family: 'Assistant';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 31px;
+  color: black;
+}
+
+/* button */
+.animasi {
+  transition: all 0.1s;
+  -webkit-transition: all 0.1s;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.btn-login {
+  background-color: #071C4D;
+  color: #fff;
+  text-align: center;
+}
+
+.btn-login:hover {
+  background-color: #1E3771;
+  color: #fff;
+}
+
+.btn-yow {
+  background-color: #071C4D;
+  color: #fff;
+  text-align: center;
+  width: 90px;
+}
+
+.btn-yow:hover {
+  background-color: #1E3771;
+  color: #fff;
+}
+
+/* end fitur */
+
+/* history */
+#history {
+  position: relative;
+}
+
+.waves {
+  position: absolute;
+  bottom: -10%;
+  left: 0;
+  width: 90%;
+}
+
+.yoi {
+  width: 90%;
+  background-color: white;
+  position: relative;
+  z-index: 1000;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  margin-top: 1px;
+}
+
+.his-judul {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-family: 'Assistant';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 4px;
+  text-align: center;
+  color: #000000;
+  table-layout: fixed;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.his-text {
+  font-family: 'Assistant';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 25px;
+  text-align: justify;
+  color: #000000;
+
+}
+
+/* Our Product */
+.yosa {
+  font-size: 50px;
+}
+
+.prod {
+  width: 90%;
+  background-color: #60A6D9;
+  position: relative;
+  z-index: 1000;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  margin-top: 1px;
+}
+
+.produk {
+  margin-top: 420px;
+}
+
+main#carousel {
+  margin-top: -490px;
+  grid-row: 1 / 2;
+  grid-column: 1 / 8;
+  width: 100%;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transform-style: preserve-3d;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  perspective: 600px;
+  --items: 5;
+  --middle: 3;
+  --position: 1;
+  pointer-events: none;
+}
+
+div.item {
+  position: absolute;
+  width: 500px;
+  height: 400px;
+  background-color: coral;
+  --r: calc(var(--position) - var(--offset));
+  --abs: max(calc(var(--r) * -1), var(--r));
+  transition: all 0.25s linear;
+  transform: rotateY(calc(-10deg * var(--r))) translateX(calc(-300px * var(--r)));
+  z-index: calc((var(--position) - var(--abs)));
+}
+
+div.item:nth-of-type(1) {
+  --offset: 1;
+  background-color: #90f1ef;
+}
+
+div.item:nth-of-type(2) {
+  --offset: 2;
+  background-color: #ff70a6;
+}
+
+div.item:nth-of-type(3) {
+  --offset: 3;
+  background-color: #ff9770;
+}
+
+div.item:nth-of-type(4) {
+  --offset: 4;
+  background-color: #ffd670;
+}
+
+div.item:nth-of-type(5) {
+  --offset: 5;
+  background-color: #e9ff70;
+}
+
+
+input:nth-of-type(1) {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+}
+
+input:nth-of-type(1):checked~main#carousel {
+  --position: 1;
+}
+
+input:nth-of-type(2) {
+  grid-column: 3 / 4;
+  grid-row: 2 / 3;
+}
+
+input:nth-of-type(2):checked~main#carousel {
+  --position: 2;
+}
+
+input:nth-of-type(3) {
+  grid-column: 4 /5;
+  grid-row: 2 / 3;
+}
+
+input:nth-of-type(3):checked~main#carousel {
+  --position: 3;
+}
+
+input:nth-of-type(4) {
+  grid-column: 5 / 6;
+  grid-row: 2 / 3;
+}
+
+input:nth-of-type(4):checked~main#carousel {
+  --position: 4;
+}
+
+input:nth-of-type(5) {
+  grid-column: 6 / 7;
+  grid-row: 2 / 3;
+}
+
+input:nth-of-type(5):checked~main#carousel {
+  --position: 5;
+}
+
+
+  /* tester */
+  .review img {
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+
+  .testimonial-content img {
+    width: 70px;
+    height: 70px;
+  }
+
+  .section-testimonial-content {
+    padding-bottom: 50px;
+  }
+
+  .section-testimonial-content .card-testimonial {
+    padding: 20px 10px 5px;
+    border-radius: 11px;
+    margin-bottom: 20px;
+  }
+
+  .section-testimonial-content .card-testimonial .testimonial-content {
+    min-height: 50px;
+  }
+
+  .section-testimonial-content .card-testimonial h3 {
+    font-size: 22px;
+  }
+
+  .section-testimonial-content .card-testimonial .testimonial {
+    font-weight: 100px;
+    font-size: 20px;
+    color: #6e6e6e;
+    min-height: 50px;
+  }
+
+  .section-testimonial-content .card-testimonial .jabatan {
+    font-weight: normal;
+    font-size: 15px;
+    color: #6e6e6e;
+  }
+
+
+  /* FOOTER */
+  #contact {
+    background: #60A6D9;
+    padding: 50px 0px 50px 0px;
+    border-radius: 2px;
+    -webkit-box-shadow: 0 3px 5px;
+    box-shadow: 0 3px 5px rgba(2, 29, 88, 0.5);
+    margin-bottom: 10px;
+  }
+
+  .footer {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+  }
+
+  .footer-section {
+    width: 100%;
+    margin: auto;
+    margin-left: 20px;
+
+  }
+
+  .footer-section h3 {
+    font-family: 'comic sans ms';
+    font-weight: 800;
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: black;
+    width: 100%;
+    line-height: 50px;
+  }
+
+  .footer-section p {
+    color: black;
+  }
+
+
+
+
+
+
+
+
+/* Desktop Version */
+@media only screen and (min-width: 992px) {
+
+  /* jumbotron */
+  .text {
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    color: #000000;
+  }
+
+  .log-title {
+    margin-top: 80px;
+  }
+
+  .ban-img {
+    position: relative;
+    z-index: 1000;
+  }
+
+  /* end jumbotron */
+
+  /* fitur */
+  .fitur-desc {
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 30px;
+    text-align: center;
+    color: black;
+  }
+
+  .fitur-link {
+    margin-top: 50px;
+    height: 31px;
+    text-align: center;
+    font-family: 'Assistant';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 31px;
+    color: black;
+  }
+
+  /* button */
+  .animasi {
+    transition: all 0.1s;
+    -webkit-transition: all 0.1s;
+  }
+
+  .btn-login {
+    background-color: #071C4D;
+    color: #fff;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 20px;
+    padding: 10px 40px;
+    font-family: 'Pacifio', cursive;
+    text-decoration: none;
+  }
+
+  .yore {
+    background-color: #3498DB;
+    border-bottom: 5px solid #2980B9;
+    text-shadow: 0px -2px #2980B9;
+  }
+
+  .btn-login:active {
+    transform: translate(100px, 52px);
+    -webkit-transform: translate(0px, 5px);
+    border-bottom: 1px solid;
+  }
+
+  .btn-yow {
+    width: 165px;
+    background-color: #071C4D;
+    color: #fff;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 20px;
+    padding: 10px 40px;
+    font-family: 'Pacifio', cursive;
+    text-decoration: none;
+  }
+
+  .btn-yow:active {
+    transform: translate(100px, 52px);
+    -webkit-transform: translate(0px, 5px);
+    border-bottom: 1px solid;
+  }
+
+  .yore {
+    background-color: #075c95;
+    border-bottom: 5px solid #062031;
+    text-shadow: 0px -2px #2980B9;
+  }
+
+  /* history */
+  .his-judul {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: 'Assistant';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 4px;
+    text-align: center;
+    color: #000000;
+    table-layout: fixed;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  }
+
+  .his-text {
+    font-family: 'Assistant';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: justify;
+    color: #000000;
+  }
+    /* tester */
+    .review img {
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+
+    .testimonial-content img {
+      width: 90px;
+      height: 90px;
+      filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    }
+
+    .section-testimonial-content {
+      padding-bottom: 50px;
+    }
+
+    .section-testimonial-content .card-testimonial {
+      padding: 40px 20px 10px;
+      border-radius: 11px;
+      filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    }
+
+    .section-testimonial-content .card-testimonial .testimonial-content {
+      min-height: 140px;
+    }
+
+    .section-testimonial-content .card-testimonial h3 {
+      font-size: 22px;
+    }
+
+    .section-testimonial-content .card-testimonial .testimonial {
+      font-weight: 200px;
+      font-size: 26px;
+      color: #6e6e6e;
+      min-height: 140px;
+    }
+
+    .section-testimonial-content .card-testimonial .jabatan {
+      font-weight: normal;
+      font-size: 22px;
+      color: #6e6e6e;
+    }
+
+    .section-testimonial-content .card-testimonial hr {
+      margin-left: -20px;
+      margin-right: -20px;
+    }
+
+
+  /* foteer */
+  .footer-section {
+    width: 20%;
+    margin: 0 auto;
+  }
+}
