@@ -1,5 +1,5 @@
 # E-MON 
-Merupakan website untuk memonitoring produk dan karya D4 Manajemen Informatika <br>
+Merupakan website untuk memonitoring produk dan karya D4 Manajemen Informatika yang
 Disusun Oleh :
 <pre>
 1. Ade Neviyani      (018) <br>
