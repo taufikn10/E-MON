@@ -20,4 +20,4 @@ Tampilan Upload
 ![Upload](https://user-images.githubusercontent.com/56226681/127719467-5abee126-5a8f-4bbf-aa70-293836971ed1.png)
 
 Untuk melihat desain lebih banyak bisa click link di bawah : <br>
-My Wireframe https://www.figma.com/file/ZxVX2ahBp90ey3LKWfJ3ap/Design-Monitoring?node-id=308%3A0
+My Wireframe https://whimsical.com/e-mon-GCEEyU5YgUA4D4pMUafgKJ
